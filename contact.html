@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="123gogo.css">
+    <title>聯絡我們 - 網頁設計期中作業</title>
+</head>
+
+<body>
+
+    <div class="kt">
+        <ul class="menu">
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="about.html">關於角色</a></li>
+            <li><a href="pt.html">商品列表</a></li>
+            <li><a href="topic.html">topics</a></li>
+            <li><a href="contact.html" style="background-color: gold; color: black;">聯絡我們</a></li>
+        </ul>
+    </div>
+
+    <div class="bbg">
+        <h1 class="mg">聯絡我們</h1>
+        <p class="mq" style="text-align: center;">有任何問題或建議的話，歡迎填寫下方的表單來聯絡我們～</p>
+    </div>
+
+    <div class="uk" style="padding: 50px 20px;">
+        <div class="contact-box">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">姓名：</label>
+                    <input type="text" id="name" name="name" placeholder="請輸入您的名稱" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">電子郵件：</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">訊息內容：</label>
+                    <textarea id="message" name="message" rows="5" placeholder="請輸入您想說的話..." required></textarea>
+                </div>
+
+                <button type="submit" class="buy-btn" style="width: 100%; font-size: 1.2rem;">送出訊息</button>
+            </form>
+            <div id="formResult" class="ms" style="margin-top: 20px; color: green; font-weight: bold;"></div>
+        </div>
+    </div>
+    <form id="contactForm">
+    
+    <footer class="ms" style="padding: 20px; color: gray;">
+        <p>&copy; 2026 網頁設計通識課期中作業</p>
+    </footer>
+
+    <script src="happyday.js"></script>
+</body>
+</html>

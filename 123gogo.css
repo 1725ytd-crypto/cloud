@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+.dra{
+    color: rgb(126, 174, 189);
+    font-size: 2.4rem;
+    text-align: center;
+}
+.uk{
+    text-align: center;
+    
+}
+.bbg{
+    background-color: rgb(164, 208, 224);
+    padding: 50px;
+}
+.brn{
+    background-color: rgb(222, 96, 18);
+    padding: 50px;
+}
+.mg{
+    text-align: center;
+    color: rgb(246, 246, 244);
+    font-size: 2.8rem;
+}
+.mq{
+    color: bisque;
+    font-size: 1.1rem;
+}
+.ms{
+    text-align: center;
+}
+.kt{
+    text-align: center;
+}
+.menu li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    width: 160px;
+     
+}
+
+.menu a{
+    display: block;
+    background-color: rgb(201, 5, 70);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+}
+.menu a:hover{
+  background-color: rgb(11, 119, 182);  
+}
+
+
+/* 讓網頁背景不要死白，帶一點淺灰色 */
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: "Microsoft JhengHei", sans-serif; /* 設定微軟正黑體 */
+}
+
+/* 給導覽按鈕加一點陰影，看起來更立體 */
+.menu a {
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    transition: 0.3s; /* 讓變色過程變平滑，不會閃爍 */
+}
+
+/* 滑鼠移上去時，按鈕稍微浮起來 */
+.menu a:hover {
+    transform: translateY(-3px);
+    background-color: rgb(11, 119, 182);
+}
+
+
+/* 產品卡片容器 */
+.product-card {
+    background-color: #fff;
+    width: 300px;
+    padding: 30px;
+    border-radius: 15px; /* 圓角 */
+    display: flex;
+    flex-direction: column; /* 讓內容由上往下排 */
+    align-items: center;    /* 內容水平置中 */
+    transition: 0.3s;
+    border: 1px solid #f0f0f0;
+}
+
+
+/* 圖片樣式*/
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 確保圖片縮放不變形 */
+    transition: 0.5s;
+}
+
+
+/* 價格樣式 */
+.price {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* 按鈕樣式：星巴克經典的外框按鈕 */
+.buy-btn {
+    background-color: transparent;
+    color: #006241;
+    border: 2px solid #006241;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background-color: #f2f2f2;
+    transform: scale(1.05); /* 縮放效果 */
+}
+
+
+
+/* 消息容器 */
+.news-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column; /* 一條一條往下排 */
+    gap: 30px;
+}
+
+/* 消息卡片 */
+.news-card {
+    display: flex; /* 圖片在左，文字在右 */
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.news-card:hover {
+    transform: scale(1.02);
+}
+
+/* 消息圖片 */
+.news-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 消息文字 */
+.news-content {
+    flex: 2;
+    padding: 30px;
+    text-align: left;
+}
+
+.news-tag {
+    background-color: #1e3932;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.news-title {
+    font-size: 1.8rem;
+    margin: 15px 0;
+    color: #1e3932;
+}
+
+.news-excerpt {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    color: #006241;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid #006241;
+}
+
+/* 手機版：圖片變上方，文字變下方 */
+@media (max-width: 768px) {
+    .news-card {
+        flex-direction: column;
+    }
+    .news-image {
+        height: 200px;
+    }
+}
